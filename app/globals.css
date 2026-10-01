@@ -1,0 +1,274 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+background:#02040a;
+color:white;
+font-family:Inter,Arial,sans-serif;
+overflow:hidden;
+}
+
+.app{
+height:100vh;
+display:flex;
+position:relative;
+}
+
+.background{
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 50% 35%,rgba(0,220,255,.22),transparent 25%),
+radial-gradient(circle at 80% 20%,rgba(130,70,255,.20),transparent 30%);
+z-index:0;
+}
+
+aside{
+width:290px;
+padding:30px;
+z-index:2;
+background:rgba(5,8,15,.75);
+border-right:1px solid rgba(255,255,255,.08);
+backdrop-filter:blur(30px);
+}
+
+.brand{
+font-size:24px;
+letter-spacing:3px;
+font-weight:700;
+}
+
+.brand span{
+display:block;
+font-size:10px;
+color:#55eaff;
+letter-spacing:4px;
+margin-top:10px;
+}
+
+.newMission{
+width:100%;
+margin:30px 0;
+padding:16px;
+border-radius:16px;
+background:#111827;
+color:white;
+border:1px solid #333;
+}
+
+h5{
+color:#687385;
+letter-spacing:3px;
+}
+
+.missionCard{
+padding:18px;
+margin:12px 0;
+background:rgba(20,25,35,.8);
+border:1px solid rgba(255,255,255,.1);
+border-radius:18px;
+}
+
+.missionCard small{
+display:block;
+color:#888;
+margin-top:5px;
+}
+
+.links{
+color:#aaa;
+line-height:2.2;
+}
+
+.profile{
+position:absolute;
+bottom:30px;
+color:#aaa;
+}
+
+.profile span{
+color:#62ffb0;
+}
+
+.main{
+flex:1;
+z-index:1;
+display:flex;
+flex-direction:column;
+}
+
+header{
+height:70px;
+padding:25px 40px;
+display:flex;
+justify-content:space-between;
+border-bottom:1px solid rgba(255,255,255,.08);
+color:#aaa;
+}
+
+.online{
+color:#62ffb0;
+}
+
+.hero{
+flex:1;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+.reactor{
+height:190px;
+width:190px;
+position:relative;
+}
+
+.core{
+position:absolute;
+inset:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:40px;
+background:radial-gradient(circle,#fff,#50eaff,#704cff);
+box-shadow:0 0 100px #50eaff;
+animation:pulse 3s infinite;
+}
+
+.orbit{
+position:absolute;
+inset:0;
+border:1px solid rgba(80,220,255,.4);
+border-radius:50%;
+}
+
+.one{
+animation:spin 8s linear infinite;
+}
+
+.two{
+inset:20px;
+animation:spin 5s linear reverse infinite;
+}
+
+@keyframes spin{
+to{
+transform:rotate(360deg)
+}
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.15)
+}
+}
+
+.connections{
+display:flex;
+gap:35px;
+margin:20px;
+}
+
+.connections small{
+display:block;
+color:#777;
+}
+
+h1{
+font-size:72px;
+text-align:center;
+line-height:1;
+}
+
+h1 span{
+background:linear-gradient(90deg,#fff,#55eaff,#9d7cff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+font-size:20px;
+color:#999;
+}
+
+.status,.team{
+display:flex;
+gap:15px;
+}
+
+.status div,.team div{
+padding:18px;
+border-radius:18px;
+background:#111827;
+border:1px solid #222;
+}
+
+.team small{
+display:block;
+color:#888;
+}
+
+.composer{
+margin:20px auto 30px;
+width:75%;
+padding:12px;
+display:flex;
+gap:12px;
+border-radius:30px;
+background:#111827;
+border:1px solid #333;
+}
+
+.composer input{
+flex:1;
+background:none;
+border:0;
+outline:0;
+color:white;
+font-size:16px;
+}
+
+.composer button{
+width:45px;
+height:45px;
+border-radius:50%;
+background:#151922;
+color:white;
+border:1px solid #333;
+}
+
+.send{
+background:white!important;
+color:black!important;
+}
+
+.execution{
+padding:60px;
+overflow:auto;
+}
+
+.goal,.agent,.complete{
+padding:22px;
+border-radius:20px;
+background:#111827;
+margin:15px 0;
+}
+
+.agent{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.agent span{
+margin-left:auto;
+color:#62ffb0;
+}
+
+.complete{
+color:#62ffb0;
+}
